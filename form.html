@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form sample</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Опитування</title>
 </head>
-<body>
- <header>
-       <h1>Form sample</h1>
-       <nav>
-          <a href="index.html">Home</a>
-       </nav> 
- </header>
- <main>
-   <form action="" method="P">
-     <label>User text: 
-       <input type="text" placeholder="User text" required 
-         name="user-text">
-      </label>
-         </br>
-            <label>User email:
-              <input type="email" plaseholder="User email" required
-                  name="user email">
-         </br> 
+  <body>
+	<header>
+		<nav>
+			<a href="index.html">На головну</a>
+		</nav>
+	</header>
+	<main>
+		<b><i>Оберіть варіант відповіді:</i></b>
+		<ol>
+			<li>Ваш домашній улюбленець?</li>
+		
+			<label>
+                <input type="radio" name="variant" value="кіт">Кіт
             </label>
-            <br>
-               Gender
-               <label>
-                  <input type="radio" name="gender" value="male">Male
-               </label>  
-               <label>
-                  <input type="radio" name="gender" value="female">Female
-               </label>
-               <label>
-                   Other: <input type="radio" name="gender" value="other">
-               </label>   
-            </br>   
-      <input type="submit"> 
-   </form>
- </main>
-</body>
+			<label>
+                <input type="radio" name="variant" value="собака">Собака
+            </label>
+			<li>Чи використовували Ви наше харчування для свого улюбленця?</li>
+			<label>
+               <input type="radio" name="variant" value="так">так
+            </label>
+			<label>
+               <input type="radio" name="variant" value="ні">ні
+            </label>
+			<label>
+               <input type="radio" name="variant" value="хочу спробувати">хочу спробувати
+            </label>
+		</ol>
+		<b>Напишіть Ваші контакти і ми відправимо Вам зразок нашої продукції</b>
+        <br>
+            <label>Ваше ім’я: 
+               <input type="text" placeholder="Ваше ім’я" required 
+                name="user-text">
+            </label>
+        </br>
+        <br>    
+            <label>Ваша адреса: 
+               <input type="text" placeholder="Ваша адреса" required 
+                name="user-text">
+            </label>    
+         </br>     
+		<form>
+			<input type="submit">
+        </form>
+			<b>Для зворотнього зв’язку вкажіть Вашу email-адресу</b>
+			<form action="https://formspree.io/f/{form_id}" method="post">
+				<label for="email">email-адреса</label> <input name="Email" id="email"
+                 type="email"> <button type="submit">Submit</button>
+			</form>
+	</main>
+  </body>
 </html>
